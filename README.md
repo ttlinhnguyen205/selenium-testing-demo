@@ -101,10 +101,8 @@ BUILD SUCCESS
 
 Ảnh minh họa kết quả:
 
-```markdown
 <img width="923" height="272" alt="image" src="https://github.com/user-attachments/assets/218d5c2a-99e0-40ff-ad37-03f6a42cf83f" />
 
-```
 
 
 # 7. Kết luận
