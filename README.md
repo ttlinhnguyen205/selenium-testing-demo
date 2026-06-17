@@ -59,7 +59,6 @@ Người dùng được chuyển đến trang danh sách sản phẩm (inventory
 
 PASS
 
----
 
 ## TC02 – Kiểm tra sản phẩm hiển thị
 
