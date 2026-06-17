@@ -67,8 +67,6 @@ Tài khoản kiểm thử:
 
 # 5. Cách chạy dự án
 
-### Clone repository
-
 ```bash
 git clone <repository-link>
 ```
