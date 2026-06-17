@@ -119,6 +119,64 @@ public class SauceDemoTest {
 
         assertTrue(loginButton.isDisplayed());
     }
+    @Test
+        public void TC07_removeProductFromCart() {
+
+        login();
+
+        driver.findElement(
+                By.id("add-to-cart-sauce-labs-backpack"))
+                .click();
+
+        driver.findElement(
+                By.id("remove-sauce-labs-backpack"))
+                .click();
+
+        boolean badgeExists =
+                driver.findElements(
+                        By.className("shopping_cart_badge"))
+                        .size() > 0;
+
+        assertFalse(badgeExists);
+        }
+        @Test
+        public void TC08_verifyCartContents() {
+
+        login();
+
+        driver.findElement(
+                By.id("add-to-cart-sauce-labs-backpack"))
+                .click();
+
+        driver.findElement(
+                By.className("shopping_cart_link"))
+                .click();
+
+        WebElement product =
+                driver.findElement(
+                        By.className("inventory_item_name"));
+
+        assertEquals(
+                "Sauce Labs Backpack",
+                product.getText());
+        }
+        @Test
+        public void TC09_openProductDetailsPage() {
+
+        login();
+
+        driver.findElement(
+                By.xpath("//div[text()='Sauce Labs Backpack']"))
+                .click();
+
+        WebElement title =
+                driver.findElement(
+                        By.className("inventory_details_name"));
+
+        assertEquals(
+                "Sauce Labs Backpack",
+                title.getText());
+        }
 
     private void login() {
 
