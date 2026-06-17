@@ -157,6 +157,7 @@ mvn clean test
 
 Kết quả:
 
+<img width="1006" height="272" alt="image" src="https://github.com/user-attachments/assets/1f759559-a7ae-44dc-b9de-7e122f3a4bb2" />
 
 
 # 5. Hướng dẫn chạy dự án
